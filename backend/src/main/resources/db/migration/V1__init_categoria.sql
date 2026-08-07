@@ -1,0 +1,7 @@
+CREATE TABLE categoria (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    descricao VARCHAR(255),
+    ativo BOOLEAN NOT NULL,
+    criado_em TIMESTAMP NOT NULL
+);
