@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="game-shell" aria-label="Jogo de damas">
+        <header class="topbar">
+          <div>
+            <h1>Damas</h1>
+            <p id="status">Sua vez</p>
+          </div>
+          <div class="actions">
+            <button id="newGame" type="button">Novo jogo</button>
+            <select id="difficulty" aria-label="Dificuldade">
+              <option value="3">Normal</option>
+              <option value="5" selected>Forte</option>
+              <option value="7">Avancado</option>
+            </select>
+          </div>
+        </header>
+
+        <div class="content">
+          <div class="board-wrap">
+            <div id="board" class="board" aria-label="Tabuleiro" role="grid"></div>
+          </div>
+
+          <aside class="panel" aria-label="Placar">
+            <div class="score-row">
+              <span>Voce</span>
+              <strong id="playerScore">12</strong>
+            </div>
+            <div class="score-row">
+              <span>Computador</span>
+              <strong id="computerScore">12</strong>
+            </div>
+            <div class="turn-card">
+              <span>Turno</span>
+              <strong id="turnLabel">Voce</strong>
+            </div>
+            <ol id="moves" class="moves" aria-label="Historico de jogadas"></ol>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

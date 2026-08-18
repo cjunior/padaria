@@ -1,14 +1,6 @@
 services:
-  backend:
+  damas:
     build:
-      context: ./backend
+      context: .
       dockerfile: Dockerfile
-    restart: unless-stopped
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    depends_on:
-      - backend
     restart: unless-stopped
