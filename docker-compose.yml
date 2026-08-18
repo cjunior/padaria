@@ -1,5 +1,5 @@
 services:
-  damas:
+  frontend:
     build:
       context: .
       dockerfile: Dockerfile
